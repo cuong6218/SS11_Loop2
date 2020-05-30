@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // *
+        // **
+        // ***
+        // ****
+        // ***** Hình vẽ bên dưới
+        let count1 = 1;
+        while (count1<=5){
+            for (let sao1 = 1;sao1<=count1;sao1++){
+            document.write('*');
+            }
+        document.write('<br>');
+            count1++;
+        }
+        document.write('<br>');
+//---------------------------------------------
+        // *****
+        // ****
+        // ***
+        // **
+        // * Hình vẽ bên dưới
+        let count2=5;
+        while (count2>=1){
+            for (let sao2=1;sao2<=count2;sao2++){
+            document.write("*");
+        }
+        document.write('<br>');
+        count2--;
+        }
+        document.write('<br>');
+// -------------------------------------------
+        //     *
+        //    **
+        //   ***
+        //  ****
+        // ***** Hình vẽ bên dưới
+        let num1 = 4;
+        let num2 = 1;
+        while (num1>=0 && num2<=5){
+            for (space1=1;space1<=num1;space1++){
+                document.write("space||");
+            }
+            for (let star1 = 1;star1<=num2;star1++){
+            document.write('*');
+            }
+            document.write("<br>");
+            num1--;
+            num2++;
+        }
+        document.write('<br>');
+//---------------------------------------------
+        // *****
+        //  ****
+        //   ***
+        //    **
+        //     *  Hình vẽ bên dưới
+        let num3 = 5;
+        let num4 = 0;
+        while (num3>=0 && num4<=4){
+            for (let space2 = 1; space2<=num4;space2++){
+            document.write('space||');
+            }
+            
+            for (star2=1;star2<=num3;star2++){
+                document.write("*");
+            }
+            document.write("<br>");
+            num3--;
+            num4++;   
+        }
+    </script>
+</body>
+</html>
