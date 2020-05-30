@@ -10,15 +10,19 @@
     <script>
         function guess(){
             let a = +prompt('Nhập số bắt đầu:');
-            let b = +prompt('Nhập số kết thúc:');            
-            let guess = +prompt('Nhập số người dùng đoán');
+            let b = +prompt('Nhập số kết thúc:');
             let c = Math.floor((Math.random()*b)+a);
-            if (guess == c){
+            let i=1
+            while (i<=3){
+                let num = +prompt(`Nhập số thứ ${i} người dùng đoán:`);
+                if (num == c){
                 alert('Chúc mừng');
-            } else if (guess < c){
+            } else if (num < c){
                 alert('Số bạn vừa đoán nhỏ hơn số random');
             } else alert ('Số bạn vừa đoán lớn hơn số random');
-            console.log(`Khoảng ${a} đến ${b}, số random là:${c}, số bạn đoán là: ${guess}`);
+            console.log(`Khoảng ${a} đến ${b}, số random là:${c}, số bạn đoán là: ${num}`);
+                i++;
+            }          
         }
     </script>
 </body>
