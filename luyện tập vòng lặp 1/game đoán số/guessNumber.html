@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="guess()">Chơi</button>
+    <script>
+        function guess(){
+            let a = +prompt('Nhập số bắt đầu:');
+            let b = +prompt('Nhập số kết thúc:');            
+            let guess = +prompt('Nhập số người dùng đoán');
+            let c = Math.floor((Math.random()*b)+a);
+            if (guess == c){
+                alert('Chúc mừng');
+            } else if (guess < c){
+                alert('Số bạn vừa đoán nhỏ hơn số random');
+            } else alert ('Số bạn vừa đoán lớn hơn số random');
+            console.log(`Khoảng ${a} đến ${b}, số random là:${c}, số bạn đoán là: ${guess}`);
+        }
+    </script>
+</body>
+</html>
