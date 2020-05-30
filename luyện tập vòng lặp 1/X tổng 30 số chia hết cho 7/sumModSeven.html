@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkMod(num){
+            if (num%7==0){
+                return true;
+            }else return false;
+        }
+        function printNum(n){     5
+           let count = 0;
+           let i = 0;
+            while (count<n){
+                if (checkMod(i)){
+                    console.log(i,"<br>");
+                    count++;
+                }
+                i++;
+                
+            }
+        }
+        printNum(30);
+    </script>
+</body>
+</html>

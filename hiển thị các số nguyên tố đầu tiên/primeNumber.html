@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function checkSNT(number) {
+            if(number < 2) {
+                return false;
+            }
+
+            if(number===2) {
+                return true;
+            }
+
+            for (let index = 2; index < number; index++) {
+                if(number % index == 0) {
+                    return false;
+                }
+            } return true;
+        }
+
+        function printSNT(n) {
+            let count = 0;
+            let i = 2;
+            while (count < n) {
+                if (checkSNT(i)) {
+                    document.write(i,"<br>");
+                    count++;
+                }
+                i++;
+            }
+        } 
+        
+        console.log(checkSNT(10)) ;
+        
+        printSNT(10);
+    // let number = +prompt('Nhập số lượng số nguyên tố cần in ra:',);
+    // let n = 2;
+    // let count;
+    // let i;
+    // alert(2)
+    // for (count=0; count<(number-1);) {
+    //     for (i = 0; i < n; i++) {
+    //         if (n % i === 0) {
+    //             n=n+1;
+    //         }
+    //         }
+    //     alert(n)
+    //     count = count + 1;
+    // }
+    </script>
+</body>
+</html>
