@@ -7,6 +7,7 @@
 </head>
 <body>
     <script>
+        let sum=0;
         function checkMod(num){
             if (num%7==0){
                 return true;
@@ -17,14 +18,16 @@
            let i = 0;
             while (count<n){
                 if (checkMod(i)){
-                    console.log(i,"<br>");
+                    document.write(`${i}__`);
+                    sum = sum +i;
                     count++;
                 }
-                i++;
-                
+                i++; 
             }
         }
-        printNum(30);
+        let a = +prompt('Nhập số lượng số:');
+        printNum(a);   
+        alert(`Tổng dãy số là: ${sum}`);
     </script>
 </body>
 </html>
