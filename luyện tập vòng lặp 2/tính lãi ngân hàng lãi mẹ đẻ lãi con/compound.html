@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let money = +prompt("Nhập số tiền ban đầu:");
+        let month = +prompt("Nhập số tháng cho vay:");
+        let ls = +prompt("Lãi suất hàng tháng:");
+        let sum;
+        for (let i=1;i<=month;i++){
+            sum = money*(i+ls/100);
+        }
+        let ls1 = sum - money;
+        
+        document.write("Số tiền ban đầu:"+money+"<br>");
+        document.write("Số tháng cho vay:"+month+"<br>");
+        document.write("Lãi suất hàng tháng:"+ls+"%"+"<br>");
+        document.write("Tổng số tiền sau lãi kép:"+sum+"<br>");
+        document.write("Lãi suất kép:"+ls1);
+    </script>
+</body>
+</html>
