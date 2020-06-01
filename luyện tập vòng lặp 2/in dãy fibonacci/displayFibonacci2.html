@@ -7,23 +7,21 @@
 </head>
 <body>
     <script>
-        function fibonacci(num){
+        function fibonacci(){
+            let num = +prompt("Nhập n:");
             let a1=0;
             let a2=1;
-            // document.write(a1,"<br>");
-            // document.write(a2,"<br>");
+            document.write(a1,"&nbsp");
+            document.write(a2,"&nbsp");
             let a3;
             for(let i=1;i<=num;i++){
                 a3=a1+a2;
-                if(a3%5==0){
-                    document.write(a3,"<br>");
-                }
+                document.write(a3,"&nbsp");
                 a1=a2;
                 a2=a3;
             }
         }
-
-        fibonacci(5);
+        fibonacci();
     </script>
 </body>
 </html>
