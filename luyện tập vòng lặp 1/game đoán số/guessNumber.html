@@ -11,7 +11,7 @@
         function guess(){
             let a = +prompt('Nhập số bắt đầu:');
             let b = +prompt('Nhập số kết thúc:');
-            let c = Math.floor((Math.random()*b)+a);
+            let c = Math.round((Math.random()*b)+a);
             let i=1
             while (i<=3){
                 let num = +prompt(`Nhập số thứ ${i} người dùng đoán:`);
